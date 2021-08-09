@@ -1,2 +1,5 @@
 region = "eu-central-1"
 instance_type = "t3.micro"
+name = "allow_tls"
+owner = "Yashchenko Mikhail"
+project = "homework 13 and 14"

@@ -13,9 +13,9 @@ resource "aws_instance" "my_webserver" {
     user_data = file("user_data.sh")
 
     tags = {
-        Name = "Hello World"
-        Owner = "Yashchenko Mikhail"
-        Project = "homework 13 and 14"
+      Name = var.name
+      Owner = var.owner
+      Project = var.project
     }
 }
 
@@ -47,9 +47,9 @@ resource "aws_security_group" "my_webserver" {
   }
 
   tags = {
-    Name = "allow_tls"
-    Owner = "Yashchenko Mikhail"
-    Project = "homework 13 and 14"
+    Name = var.name
+    Owner = var.owner
+    Project = var.project
   }
 }
 

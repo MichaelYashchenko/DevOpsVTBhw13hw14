@@ -13,3 +13,9 @@ variable "another_server_port" {
     type = number
     default = 443
 }
+
+variable "name" {}
+
+variable "owner" {}
+
+variable "project" {}
